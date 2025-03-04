@@ -7,7 +7,7 @@ function Cards() {
     <div>
       <div className="container-cards">
         {/* Card 1 */}
-        <Link to="/" className="logo">
+        <Link to="/home=iLabTDI" className="logo">
           <img src="logo_ilab.png" className="logo-madre" alt="Logo iLabTDI" />
         </Link>
 

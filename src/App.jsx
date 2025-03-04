@@ -7,6 +7,7 @@ import QuienesSomos from "./pages/LaboratorioIoT/QuienesSomos";
 import Proyectos from "./pages/LaboratorioIoT/proyectosIoT";
 import Patentes from "./pages/LaboratorioIoT/Patentes";
 import Titulados from "./pages/LaboratorioIoT/Titulados";
+import Home_iLab from "./pages/iLabTDI/Home_iLab";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/proyectos-iot" element={<Proyectos />} />
         <Route path="/patentes-iot" element={<Patentes />} />
         <Route path="/Titulados-iot" element={<Titulados />} />
+        <Route path="/home=iLabTDI" element={<Home_iLab />} />
       </Routes>
     </Router>
   );

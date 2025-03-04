@@ -1,0 +1,127 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos generales */
+.header-Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 5%;
+  background: #222b57;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo-NavBar {
+  display: flex;
+  align-items: center;
+}
+
+.icono-NavBar {
+  width: 80px;
+  height: auto;
+}
+
+.nombre-NavBar {
+  max-width: 120px;
+}
+
+/* Navbar Desktop */
+.NavBar {
+  display: flex;
+  gap: 20px;
+}
+
+.NavBar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+.btn-NavBar {
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.btn-NavBar:hover {
+  color: #00bcd4;
+}
+
+.NavBar a:hover {
+  color: #00bcd4;
+}
+
+/* Menú Hamburguesa */
+.menu-icon-NavBar {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.bar-NavBar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 5px 0;
+  border-radius: 10px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Efecto de la "X" en el menú abierto */
+.menu-icon.open .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Estilos para el menú en móviles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .NavBar {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    background: rgba(34, 43, 87, 0.95);
+    width: 60%;
+    height: 100vh;
+    padding-top: 80px;
+    transition: right 0.4s ease-in-out;
+    text-align: center;
+  }
+
+  .NavBar a {
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+
+  .NavBar a:hover {
+    color: #00bcd4;
+  }
+
+  /* Mostrar menú cuando está activo */
+  .NavBar.active {
+    right: 0;
+  }
+}

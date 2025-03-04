@@ -1,0 +1,16 @@
+.container-iLab {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  background: url("../../../../../public/Images_iLabTDI/Banner_iLab.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  margin-top: 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 0;
+}
