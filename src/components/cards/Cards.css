@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  height: 100%;
+
+  /*background: linear-gradient(to top right, #1a2436, #40325b, #2e2730);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 0;
+  background: url("../../assets/fondo.png") no-repeat;
+  background-size: cover;
+}
+
+.container-cards::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.619);
+  z-index: 0;
+}
+
+.logo {
+  display: flex;
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: 350px;
+  max-height: 350px;
+  width: 350px;
+  height: 350px;
+  background: rgba(0, 0, 0, 0.214);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.352);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5%;
+  z-index: 2;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.452);
+}
+
+.logo h1 {
+  color: #fff;
+}
+
+.logo-madre {
+  width: 250px;
+}

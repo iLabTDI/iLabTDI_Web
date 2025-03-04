@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sección principal */
+.servicios {
+  margin: 0;
+  padding: 40px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: #f6f6f6;
+}
+
+/* Imagen */
+.lab_image {
+  display: flex;
+  max-width: 600px;
+  height: auto;
+  padding: 20px;
+  justify-content: center;
+}
+
+.lab_image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Texto */
+.servicios-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  text-align: left;
+  padding: 20px;
+}
+
+.servicios-text h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  font-size: 28px;
+}
+
+.servicios-text h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 0;
+}
+
+.servicios p {
+  line-height: 1.6;
+  margin: 20px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Listas */
+.listas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.lista_1,
+.lista_2 {
+  min-width: 200px;
+}
+
+.lista_1 ul,
+.lista_2 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.lista_1 li,
+.lista_2 li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.lista_1 li .svg-inline--fa,
+.lista_2 li .svg-inline--fa {
+  margin-right: 8px;
+  color: #5ca9fb;
+}
+
+/* 🌍 RESPONSIVE DESIGN 🌍 */
+@media (max-width: 1024px) {
+  .servicios {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lab_image {
+    padding: 0;
+  }
+
+  .servicios-text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .servicios-text h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .listas {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicios {
+    padding: 30px 5%;
+  }
+
+  .lab_image {
+    display: flex;
+    max-width: 300px;
+    height: auto;
+    padding: 5px;
+    justify-content: center;
+  }
+
+  .servicios-text h2 {
+    font-size: 24px;
+  }
+
+  .servicios p {
+    font-size: 16px;
+  }
+
+  .lista_1,
+  .lista_2 {
+    min-width: 100%;
+    text-align: left;
+  }
+}

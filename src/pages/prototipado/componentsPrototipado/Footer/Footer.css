@@ -1,0 +1,219 @@
+.footer-Proto {
+  background-color: #004b75;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content-Proto {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer-section-Proto {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section-Proto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.contact-info-Proto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item-Proto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item-Proto i {
+  font-size: 1.2rem;
+}
+
+.contact-item-Proto p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-section-Proto ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section-Proto ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section-Proto ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section-Proto ul li a:hover {
+  color: #5ca9fb;
+}
+
+.social-links-Proto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links-Proto a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links-Proto a:hover {
+  color: #5ca9fb;
+}
+
+.social-links-Proto i {
+  font-size: 1.5rem;
+}
+
+.footer-bottom-Proto {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logos-Proto {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-logos-Proto img {
+  height: 50px;
+  width: auto;
+  filter: brightness(0) invert(1); /* Convierte los logos a blanco */
+}
+
+.logo-tdi-Proto {
+  height: 60px;
+}
+
+.logo-cucei-Proto {
+  height: 70px;
+}
+
+.logo-division-Proto {
+  height: 50px;
+}
+
+.logo-proto-Proto {
+  height: 60px;
+}
+
+.legal-links-Proto {
+  margin-top: 10px;
+}
+
+.legal-links-Proto a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.legal-links-Proto a:hover {
+  color: #5ca9fb;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .footer-content-Proto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section-Proto {
+    flex: 1 1 100%;
+  }
+
+  .contact-item-Proto {
+    justify-content: center;
+  }
+
+  .social-links-Proto {
+    align-items: center;
+  }
+
+  .footer-logos-Proto {
+    flex-wrap: wrap;
+  }
+
+  .footer-logos-Proto img {
+    height: 40px;
+  }
+
+  .logo-tdi-Proto {
+    height: 50px;
+  }
+
+  .logo-cucei-Proto {
+    height: 60px;
+  }
+
+  .logo-division-Proto {
+    height: 40px;
+  }
+
+  .logo-proto-Proto {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-Proto {
+    padding: 20px 10px;
+  }
+
+  .contact-item-Proto p {
+    font-size: 0.8rem;
+  }
+
+  .social-links-Proto a {
+    font-size: 0.9rem;
+  }
+
+  .footer-logos-Proto img {
+    height: 30px;
+  }
+
+  .logo-tdi-Proto {
+    height: 40px;
+  }
+
+  .logo-cucei-Proto {
+    height: 50px;
+  }
+
+  .logo-division-Proto {
+    height: 30px;
+  }
+
+  .logo-proto-Proto {
+    height: 40px;
+  }
+}
