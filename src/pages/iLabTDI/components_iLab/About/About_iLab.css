@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.conntainer_about_iLab {
+  display: flex;
+  background: #00010d;
+  padding: 40px 5%;
+  color: #fff;
+}
