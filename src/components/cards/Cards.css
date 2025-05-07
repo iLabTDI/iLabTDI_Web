@@ -1,14 +1,13 @@
 body {
   margin: 0;
   height: 100%;
-
-  /*background: linear-gradient(to top right, #1a2436, #40325b, #2e2730);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .container-cards {
+  position: relative; /* Necesario para posicionar el video correctamente */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -17,9 +16,19 @@ body {
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  z-index: 0;
-  background: url("../../assets/fondo.png") no-repeat;
-  background-size: cover;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden; /* Evita que el video se desborde */
+}
+
+#video-fondo {
+  position: absolute; /* Posiciona el video detrás del contenido */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover; /* Ajusta el video al tamaño del contenedor */
+  z-index: -1; /* Envía el video al fondo */
 }
 
 .container-cards::after {
@@ -29,8 +38,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.619);
-  z-index: 0;
+
+  z-index: 0; /* Asegúrate de que esté por encima del video */
 }
 
 .logo {
@@ -40,14 +49,14 @@ body {
   max-height: 350px;
   width: 350px;
   height: 350px;
-  background: rgba(0, 0, 0, 0.214);
+  background: rgba(187, 187, 187, 0.341);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.352);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   border-radius: 5%;
-  z-index: 2;
+  z-index: 2; /* Asegúrate de que las tarjetas estén por encima del video y del overlay */
   text-decoration: none;
   color: inherit;
 }
